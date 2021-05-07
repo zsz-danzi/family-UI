@@ -1,0 +1,55 @@
+
+/*==============================
+ * Project: 空间家族2.0
+ * Description: 适配IphoneX
+ * @author: danzizhong
+ * Time：2018.12.29
+=================================*/
+
+
+/*and (-webkit-device-pixel-ratio : 3)  calc( rem + px ) 有效果 */
+/*24px iphonex-top-h*/
+/*34px iphonex-bottom-h*/
+@media only screen and (device-width : 375px) and (device-height : 812px) ,
+(device-width : 414px) and (device-height : 896px) {
+
+    /*      
+        bottom:calc(constant(safe-area-inset-top) + constant(safe-area-inset-bottom));
+        bottom:calc(env(safe-area-inset-top) + env(safe-area-inset-bottom));
+        
+        电池栏：20px
+        刘海：24px
+
+        透顶  iphone6/7/8: 64px   
+        iphonex:88px
+
+    */
+
+    /*主页适配*/     
+    .ui-container .family-hd:after{
+        top: -88px;
+    }
+
+    /* 首页底部按钮 */ 
+    .ui-footer{
+        padding-bottom: 22px;
+    } 
+    
+    .fix-btn-group{
+        bottom: 92px;
+    }
+    
+    .fix-footer{
+        bottom: 84px;
+    }
+
+    /*action-native*/
+    .mod-action .action-group .list:last-child{
+        padding-bottom: 38px;
+    }
+    .mod-action .action-wrap .btn:last-child{
+        height: 80px;
+    }
+    
+}
+

@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>家族首页</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <link rel="stylesheet" href="../index.css">
+</head>
+
+<body class="home-index">
+	
+	<!-- 头部模拟组件 S-->
+	<div class="ui-nav">
+		<div class="ui-nav-l">
+			<a class="icon-back"></a>
+		</div>
+		<div class="ui-nav-r">
+			<a class="icon-back"></a>
+			<a class="icon-menu"></a>
+		</div>
+	</div>
+	<!-- 头部模拟组件 E-->
+
+	<!-- 组件内容 S-->
+	<div class="ui-container">
+
+		<!-- family-hd S-->
+		<div class="family-hd">
+			<div class="avatar"></div>
+			<p class="family-name">帕拉丁中国<img src="http://qzonestyle.gtimg.cn/qzone/em/e118.png" class="i-emoji-m"><img src="http://qzonestyle.gtimg.cn/qzone/em/e118.png" class="i-emoji-m"><img src="http://qzonestyle.gtimg.cn/qzone/em/e118.png" class="i-emoji-m"><i class="icon-m-vip l1"></i><i class="icon-auth"></i></p>	
+			<div class="family-info">
+				<p class="tag">时尚、潮牌、Palladium、潮牌<a href="javascript:;" class="btn-desc active">家族简介</a></p>
+				<p class="info-desc">介于主流与非主流的神秘家族</p>
+			</div>
+			<div class="mine-info">
+				<div class="rank">
+					<strong>666</strong>
+					<em>排名</em>
+				</div>
+				<div class="amount">
+					<strong>1.2w<span class="red-dot"><i>+69</i></span></strong>
+					<em>成员</em>
+				</div>
+				<div class="visitor">
+					<strong>
+						888<span class="red-dot"><i>+69</i></span>
+					</strong>
+					<em>访客</em>
+				</div>	
+				<a href="javascript:;" class="btn-enter">进入空间</a>
+			</div>
+		</div>
+		<!-- family-hd E-->
+
+		<!-- family-bd S-->
+		<div class="family-bd">
+	
+			<!-- 空 -->
+			<div class="feed-blank no-img">
+				<div class="blank-bg small"></div>
+				<div class="feed-bd">
+				<p class="tips">目前没有动态，你可以<a class="link">邀请好友</a>一起玩！</p>
+				<!-- 按钮区 -->
+				<div class="btn-wrap" style="display: none">
+					<button class="btn-full">邀请好友</button>
+				</div>
+				</div>
+			</div>
+
+			<!--热门家族-->
+			<div class="family-hot">
+				<div class="hot-content">
+					<h2 class="hot-title"><b class="ico"></b>热门家族<b class="ico"></b></h2>
+					<div class="hot-list">
+						<ul>
+							<li class="hot-item">
+								<div class="avatar">
+									<span></span>
+								</div>
+								<p class="hot-name">网红家族网红家族网红家族</p>
+							</li>
+							<li class="hot-item">
+								<div class="avatar">
+									<span></span>
+								</div>
+								<p class="hot-name">富贵家族</p>
+							</li>
+							<li class="hot-item">
+								<div class="avatar">
+									<span></span>
+								</div>
+								<p class="hot-name">直播家族</p>
+							</li>
+							<li class="hot-item">
+								<div class="avatar">
+									<span></span>
+								</div>
+								<p class="hot-name">网红家族</p>
+							</li>
+						</ul>
+					</div>
+					<div class="hot-more">
+						<p>点击查看更多</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="fix-menu-d" style="display: none"></div>
+		</div>
+		<!-- family-bd S-->	
+
+	</div>
+	<!-- 组件内容 E-->
+
+	<div class="fix-btn-group">
+		<button class="btn-live"><i></i>直播</button>
+		<button class="btn-say"><i></i>说说</button>
+		<button class="btn-fri"><i></i>扩列</button>
+	</div>
+	
+
+	<div class="fix-footer" style="display: none">
+		<span class="txt">加入家族，抱团取暖</span>
+		<button class="btn-small">申请加入</button>
+	</div>	
+
+	<!-- footer 组件 S-->
+	<div class="ui-footer">
+		<div class="blur-bg"></div>
+<!--    		<p class="vip-txt">开通豪华黄钻创建家族，或加入家族</p>
+		<a href="javascript:;" class="btn-go">开通豪华黄钻</a> -->
+		<div class="foot__op" role="tablist">
+			<div class="foot__op-tab" role="tab" aria-label="广场">
+				<i class="foot__op-ico ico-square"></i>
+				<span class="foot__op-txt">广场</span>
+			</div>
+			<div class="foot__op-tab active" role="tab" aria-label="家族">
+				<i class="foot__op-ico ico-family"></i>
+				<span class="foot__op-txt">家族</span>
+			</div>
+			<!-- 红点加 .foot__op-dot -->
+			<div class="foot__op-tab foot__op-dot" role="tab" aria-label="我的">
+				<i class="foot__op-ico ico-mine"></i>
+				<span class="foot__op-txt">我的</span>
+			</div>
+		</div>
+	</div>
+	<!-- footer 组件 E-->
+
+
+</body>
+
+<script src="../js/zepto.js"></script>
+<script>
+
+	//iphone 需要添加点击事件才触发 active效果
+	document.documentElement.addEventListener('touchend',function(){
+		console.log(1)
+	})
+
+	btn_menu = $('.btn-menu');
+	btn_menu.on('click',function(){
+		$('.fix-menu-d').show();
+		$(this).next().show();
+	})
+
+	$('.fix-menu-d').on('click', function(){
+		$(this).hide();
+		$('.menu-option').hide();
+	})
+
+</script>
+</html>

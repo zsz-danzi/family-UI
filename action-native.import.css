@@ -1,0 +1,196 @@
+/*==============================
+ * Project: 家族操作浮层
+ * Description: 家族操作组件
+ * @author: danzizhong
+ * Time：2018.10.31
+=================================*/
+.mod-action{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	background-color: rgba(0,0,0,0.4);
+	text-align: center;
+}
+.mod-action .action-wrap{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #EEEFF3;
+}
+.mod-action .action-wrap .btn{
+	width: 100%;
+	height: 46px;
+	font-size: 16px;
+	line-height: 16px;
+	padding:15px 0;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color: rgba(255,255,255,1);
+	color: #000;
+	position: relative;
+	-webkit-transition:all ease .2s;
+	display: block;
+}
+.mod-action .action-wrap .btn.alien{
+	color: #ED4446;
+}
+.mod-action .action-wrap .btn:active{
+	background-color: rgba(217,217,217,1);
+
+}
+.mod-action .action-wrap .btn:after{
+	content: "";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    border-top: 1px solid #e6e6e6;
+    bottom: -1px;
+    -ms-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform: scaleY(.5);
+    z-index: 10;
+}
+.mod-action .action-wrap .btn:nth-last-child(1):after{
+	display: none;
+}
+.mod-action .action-wrap .btn:nth-last-child(2){
+	margin-bottom: 10px;
+}
+.mod-action .action-wrap .btn:nth-last-child(2):after{
+	display: none;
+}
+.mod-action .action-wrap .btn:nth-of-type(1):nth-last-child(2){
+	color: red;
+}
+/*v2版本*/
+.mod-action .action-group{
+	background-color: #fff;
+	border-radius: 6px 6px 0 0;
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 8px;
+    max-height: 70vh;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; 
+}
+.mod-action .action-group .list{
+	padding-left: 56px;
+	text-align: left;
+	height: 48px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    -webkit-transition: all ease .2s;
+}
+.mod-action .action-group .list:active{
+	background-color: rgba(217,217,217,1);
+}
+.mod-action .action-group .list p{
+	line-height: 16px;
+	font-size: 16px;
+	color: rgba(34,34,34,.97);
+	font-weight: 500;
+}
+.mod-action .action-group .list em{
+	color: #FF3636;
+    margin: 0 1px;
+}
+.mod-action .action-group .list span{
+	width: 20px;
+	height: 20px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	top: 50%;
+	top: 14px;
+	left: 25px;
+	position: absolute;
+}
+.mod-action .action-group .list span.icon-up{
+	background-image: url(img/slice/action-native/Sync@2x.png);
+}
+.mod-action .action-group .list span.icon-ignore{
+	background-image: url(img/slice/action-native/iGnore@2x.png);
+}
+.mod-action .action-group .list span.icon-down{
+	background-image: url(img/slice/action-native/Sync2@2x.png);
+}
+.mod-action .action-group .list span.icon-remove{
+	background-image: url(img/slice/action-native/Share-Card@2x.png);
+}
+.mod-action .action-group .list span.icon-close{
+	background-image: url(img/slice/action-native/Cancel@2x.png);
+}
+.mod-action .action-group .list span.icon-share{
+	background-image: url(img/slice/action-native/Share@2x.png);
+}
+.mod-action .action-group .list span.icon-report{
+	background-image: url(img/slice/action-native/Report@2x.png);
+}
+.mod-action .action-group .list span.icon-help{
+	background-image: url(img/slice/action-native/Help@2x.png);
+}
+.mod-action .action-group .list span.icon-manage{
+	background-image: url(img/slice/action-native/Manage@2x.png);
+}
+.mod-action .action-group .list span.icon-image{
+	background-image: url(img/slice/action-native/Album@2x.png);
+}
+.mod-action .action-group .list span.icon-camera{
+	background-image: url(img/slice/action-native/Camera@2x.png);
+}
+.mod-action .action-group .list span.icon-quit{
+	background-image: url(img/slice/action-native/Quit@2x.png);
+}
+.mod-action .action-group .list span.icon-delete{
+	background-image: url(img/slice/action-native/Delete@2x.png);
+}
+.mod-action .action-group .list span.icon-blacklist{
+	background-image: url(img/slice/action-native/Blacklist@2x.png);
+}
+.mod-action .action-group .list span.icon-invite{
+	background-image: url(img/slice/action-native/invite@2x.png);
+}
+.mod-action .action-group .list span.icon-recruit{
+	background-image: url(img/slice/action-native/Recruit@2x.png);
+}
+.mod-action .action-group .list span.icon-cancel{
+	background-image: url(img/slice/action-native/cancel-connect@2x.png);
+}
+.mod-action .action-group .list span.icon-update{
+	background-image: url(img/slice/action-native/Sync-Game@2x.png);
+}
+.mod-action .action-group .list:last-child{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+.mod-action .action-group .list:last-child span{
+	top: 22px;
+}
+.mod-action .action-group .list:last-child:before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    height: 1px;
+    left: 0;
+    border-top: 1px solid rgba(0,0,0,0.04);
+    top: -1px;
+    -ms-transform: scaleY(.5);
+    transform: scaleY(.5);
+    -webkit-transform: scaleY(.5);
+    z-index: 10;
+}
+
+

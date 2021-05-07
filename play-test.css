@@ -1,0 +1,658 @@
+/*==============================
+ * Project: 空间家族2.0
+ * Description: 玩法测试
+ * @author: danzizhong
+ * Time：2019.01.08
+=================================*/
+@charset "utf-8";
+@import "reset.import.css";
+
+
+@font-face{    
+    font-family: 'fang-new';    
+    src: url('font/fang-new2.ttf'), 
+         url('font/fang-new2.woff'); 
+    font-weight: normal;    
+    font-style: normal;  
+}
+
+@font-face{    
+    font-family: 'fang-new3';    
+    src: url('font/fang-new3.ttf'), 
+         url('font/fang-new3.woff'); 
+    font-weight: normal;    
+    font-style: normal;  
+}
+
+/*玩法测试*/
+.mod-dialog{
+    font-family: "fang-new";
+}
+.play-test{
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/playTest/bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    color: #ffffff;
+}
+.play-test .bg-bot{
+    width: 100%;
+    padding-top: 13.733333%;
+    background-image: url(img/playTest/bot.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.play-test .bg-bot .diamond{
+    width: 8.133333vw;
+    height: 11.333333vw;
+    background-image: url(img/playTest/p-03.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -31%;
+    left: 46.3%;
+    -webkit-animation: ani-move linear 1.6s both infinite;
+}
+.play-test .bg-bot .diamond-shadow{
+    width: 5.866667vw;
+    height: 1.333333vw;
+    background-image: url(img/playTest/yin.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 54%;
+    left: 0;
+    right: 0;
+    margin:0 auto;
+    -webkit-animation: ani-yin linear 1.6s both infinite;
+}
+.play-test.compose .bg-bot{
+    display: none;
+}
+
+/*common*/
+.play-test > section{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+.play-test .content-mid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform:translate(-50%,-40.4%);
+}
+.play-test.compose .sec-05 .content-mid{
+    top: 0;
+    left: 0;
+    -webkit-transform:translate(0,0);
+}
+.play-test .hd{
+    width: 100%;
+    padding-top: 34.933333%;
+    background-image: url(img/playTest/bt-top.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; 
+    position: absolute;
+    top: 14px;
+    left: 0;
+    z-index: 10;
+}
+.play-test .bd{
+    width: 100vw;
+    height: 117.333333vw;
+    background-image: url(img/playTest/bd-01.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+/*sec-01*/
+.play-test .sec-01 .content-mid{
+    -webkit-transform:translate(-50%,-50%);
+}
+.play-test .sec-01 .btn-skip{
+    width: 13.866667vw;
+    height: 6.4vw;
+    background-image: url(img/playTest/btn-skip@2x.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 6.7%;
+    top: 7.5%;
+    font-size: 0;
+    text-indent: -9999em;
+    overflow: hidden;
+}
+.play-test .sec-01 .ani-bg{
+    width: 322px;
+    height: 369px;
+    background-image: url(img/playTest/sec-01.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-top: 40px;
+    margin:0 auto;
+}
+.play-test .sec-01 .ani-frames{
+/*    width: 84vw;
+    height: 97vw;*/
+    /*background: #fff;*/
+    width: 241px;
+    height: 246px;
+    background-size: 3615px 246px;
+    background-image: url(img/playTest/ani.png);
+    -webkit-animation: frame-ani2 1s 0s steps(15,end) infinite both;
+    margin:0 auto;
+}
+.play-test .sec-01 .btn-go{
+    width: 64vw;
+    height: 9.6vw;
+    background-image: url(img/playTest/btn-go.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 7.8vh auto 0;
+    text-indent: -9999em;
+    overflow: hidden;
+    -webkit-transition:transform ease .3s;
+}
+.play-test .sec-01 .btn-go:active{
+    -webkit-transform:scale(.96);
+}
+
+/*sec-02*/
+.play-test .sec-02 .content-mid{
+    -webkit-transform:translate(-50%,-40.4%);
+}
+.play-test .sec-02 .questions{
+    width: 100vw;
+    height: 33.866667vw;
+    background-image: url(img/playTest/bd-02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin: 8.266667vw auto 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:7% 22% 5% 23%;
+}
+.play-test .sec-02 .questions p.ques-txt{
+    font-size: 4.8vw;
+    padding-left: 7.4vw;
+    line-height: 1.3;
+    position: relative;
+    letter-spacing: 0.7vw;
+    font-family: "fang-new";
+}
+.play-test .sec-02 .questions p.ques-txt:before{
+    content: "Q:";
+    width: 7.4vw;
+    line-height: 1.3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    white-space: nowrap;
+}
+.play-test .sec-02 .answer{
+    margin-top: 10.9vw;
+    overflow: hidden;
+}
+.play-test .sec-02 .answer .ans-txt{
+    font-family: "fang-new";
+    text-align: center;
+    width: 64vw;
+    height: 9.866667vw;
+    background-image: url(img/playTest/p-02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin:0 auto 10.1vw;
+    font-size: 5.3vw;
+    padding-top: 2.4%;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    line-height: 1;
+}
+.play-test .sec-02 .answer .ans-txt.on{
+    background-image: url(img/playTest/p-01.png);
+}
+.play-test .sec-02 .answer .ans-txt.more{
+    font-size: 4.2vw;
+    line-height: 1.15;
+}
+.play-test .sec-02 .answer-pro{
+    width: 100%;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0 14%;
+    overflow: hidden;
+}
+.play-test .sec-02 .answer-pro .pro-fl{
+    float: left;
+    overflow: hidden;
+}
+.play-test .sec-02 .pro-fl span{
+    width: 8vw;
+    height: 4.533333vw;
+    background-image: url(img/playTest/a.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+    margin-right: -1.2vw;
+}
+.play-test .sec-02 .pro-fl span.on{
+    background-image: url(img/playTest/a-on.png);
+}
+.play-test .sec-02 .answer-pro .pro-fr{
+    float: right;
+    color: #e702ce;
+    font-size: 4.266667vw;
+    line-height: 1.2;
+    font-family: "fang-new";
+    letter-spacing: 0.8vw;
+}
+.play-test .sec-02  .btn-prev{
+    width: 17.733333vw;
+    height: 5.066667vw;
+    line-height: 5.066667vw;
+    font-size: 3.4vw;
+    background-color: #8850c7;
+    color: #ffffff;
+    margin: 5.066667vw auto 0;
+    text-align: center;
+    display: block;
+    border-radius: 100px;
+    font-family: "fang-new";
+}
+
+/*sec-03*/
+.play-test .sec-03 .tag-hd{
+    width: 100%;
+    padding-top: 19.2%;
+    background-image: url(img/playTest/q-04.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 8vw;
+}
+.play-test .sec-03 .tag-wrap{
+    padding: 7% 13% 0 15.15%;
+    overflow: hidden;
+}
+.play-test .sec-03 .tag-wrap span{
+    width: 21.6vw;
+    height: 11.066667vw;
+    background-image: url(img/playTest/x-02.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    float: left;
+    text-align: center;
+    line-height: 10.466667vw;
+    font-size: 4.133333vw;
+    font-family: "fang-new";
+    letter-spacing: 1.4vw;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-top: 0.6vw;
+    text-indent: 1vw;
+    margin: 0 1vw 2.133333vw;
+}
+.play-test .sec-03 .tag-wrap span.on{
+    background-image: url(img/playTest/x-01.png);
+}
+.play-test .sec-03 .btn-get{
+    width: 64vw;
+    height: 9.6vw;
+    background-image: url(img/playTest/btn-get.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 7.2vw auto 0;
+    text-indent: -9999em;
+    overflow: hidden;
+    -webkit-transition: transform ease .3s;
+}
+.play-test .sec-03 .btn-get:active{
+    -webkit-transform:scale(.96);
+}
+
+/*sec-04*/
+.play-test .sec-04 .ana-group{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform:translate(-50%,-50%);
+    transform:translate(-50%,-50%);
+}
+.play-test .sec-04 .ana-01{
+    width: 21.866667vw;
+    height: 22.933333vw;
+    background-image: url(img/playTest/r-01.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: block;
+    margin:0 auto;
+    -webkit-animation: ani-move linear 1s both infinite;
+}
+.play-test .sec-04 .ana-02{
+    width: 14.933333vw;
+    height: 2.666667vw;
+    background-image: url(img/playTest/r-02.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    display: block;
+    margin:1.333333vw auto 0; 
+    -webkit-animation: ani-yin linear 1s both infinite;
+}
+.play-test .sec-04 .ana-txt{
+    font-size: 5.066667vw;
+    line-height: 1.5;
+    color: #ffffff;
+    text-align:center;
+    font-family: "fang-new";
+    margin-top: 4.2vw;
+}
+
+/*sec-05*/
+.result .diamond{
+    display: none;
+}
+.result .diamond-shadow{
+    display: none;
+}
+.play-test .sec-05 .content-mid{
+    -webkit-transform: translate(-50%,-50.5%);
+}
+.play-test .sec-05 .share-bg{
+    width: 85.6vw;
+    height: 139.466667vw;
+    background-image: url(img/playTest/share/share-bg1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.play-test.compose .sec-05 .share-bg{
+    width: 100vw;
+    height: 162.9283528037vw;
+}
+.play-test .sec-05 .btn-share{
+    width: 64vw;
+    height: 9.6vw;
+    background-image: url(img/playTest/btn-share.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 5vw auto 0;
+    text-indent: -9999em;
+    overflow: hidden;
+    -webkit-transition: transform ease .3s;
+}
+.play-test .sec-05 .btn-share:active{
+    -webkit-transform:scale(.96);
+}
+.play-test .sec-05 .inp{
+    height: 22px;
+    line-height: 22px;
+    margin:2vw auto 0;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+}
+.play-test .sec-05 input[type='checkbox'] {
+    width: 0;
+    opacity: 0;
+    height: 0;
+}
+.play-test .sec-05 .inp label{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+.play-test .sec-05 .inp label{
+    padding-left: 17px;
+}
+.play-test .sec-05 .inp label:before{
+    content: '';
+    cursor: pointer;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 0;
+    background: transparent;
+    border: 1px solid #d0d0d0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.play-test .sec-05 .inp label:after{
+    opacity: 0;
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 3px;
+    background: transparent;
+    top: 50%;
+    left: 5px;
+    margin-top: -2px;
+    border: 2px solid #ffffff;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg) translateY(-50%);
+    transform: rotate(-45deg) translateY(-50%);
+}
+.play-test .sec-05 .inp input[type=checkbox]:checked + label:after{
+    opacity: 1;
+}
+.play-test .sec-05 .share-bg .qr-code{
+    width: 21.333333vw;
+    height: 21.333333vw;
+    background-image: url(img/playTest/qr-code.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 5.2%;
+    left: 12%;
+}
+.play-test.compose .sec-05 .btn-share{
+    display: none;
+}
+.play-test.compose .sec-05 .share-wrap{
+    display: none;
+}
+.play-test .sec-05 .share-bg .like{
+    width: 42vw;
+    height: 24vw;
+    position: absolute;
+    bottom: 3.2%;
+    right: 8.8%;
+}
+.play-test.compose .sec-05 .share-bg .like{
+    bottom: 4.5%;
+}
+.play-test.compose .sec-05 .inp{
+    display: none;
+}
+.play-test .sec-05 .share-bg .like .like-name{
+    font-size: 3.066667vw;
+    color: #ffffff;
+    text-align: right;
+    line-height: 1.5;
+    font-family: "fang-new";
+    padding-right: 2.4vw;
+    letter-spacing: .5vw;
+}
+.play-test .sec-05 .share-bg .like-desc span{
+    font-family: "MF ZhuoHei XinChao","fang-new3";
+    font-size: 4.8vw;
+    color: #ffef6b;
+    float: right;
+    padding-top: 3.3vw;
+}
+.play-test .sec-05 .share-bg.type-02 .like-desc span{
+    color: #ffcaca;
+}
+.play-test .sec-05 .share-bg.type-02{
+    background-image: url(img/playTest/share/share-bg2.png);
+}
+.play-test .sec-05 .share-bg.type-03 .like-desc span{
+    color: #50e0ff;
+}
+.play-test .sec-05 .share-bg.type-03{
+    background-image: url(img/playTest/share/share-bg3.png);
+}
+.play-test .sec-05 .share-bg.type-04 .like-desc span{
+    color: #5bf265;
+}
+.play-test .sec-05 .share-bg.type-04{
+    background-image: url(img/playTest/share/share-bg4.png);
+}
+.play-test .sec-05 .share-wrap{
+    width: 100%;
+    height: 47px;
+    text-align: center;
+    margin-top: 10vw;
+    position: relative;
+}
+.play-test .sec-05 .share-wrap a{
+    width: 40px;
+    height: 40px;
+    margin: 0 2.5vw;
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.play-test .sec-05 .share-wrap:before {
+    display: block;
+    content: '';
+    width: 243px;
+    height: 12px;
+    background-size: 100% 100%;
+    background-image: url(img/playTest/line@2x.png);
+    position: absolute;
+    top: -46%;
+    left: 50%;
+    margin-left: -121px;
+}
+.play-test .sec-05 .share-wrap a.btn-weixin{
+    background-image: url(img/playTest/share/icon-share01@2x.png);
+}
+.play-test .sec-05 .share-wrap a.btn-friend{
+    background-image: url(img/playTest/share/icon-share02@2x.png);
+}
+.play-test .sec-05 .share-wrap a.btn-qq{
+    background-image: url(img/playTest/share/icon-share03@2x.png);
+}
+.play-test .sec-05 .share-wrap a.btn-qzone{
+    background-image: url(img/playTest/share/icon-share04@2x.png);
+}
+
+@-webkit-keyframes ani-yin {
+  0% {
+    -webkit-transform:scale3d(1,1,1);
+  }
+  50% {
+    -webkit-transform:scale3d(1.2,1,1);
+  }
+  100% {
+    -webkit-transform:scale3d(1,1,1);
+  }
+}
+
+@-webkit-keyframes ani-move {
+  0% {
+    -webkit-transform:translate3d(0,0,0);
+  }
+  50% {
+    -webkit-transform:translate3d(0,-8%,0);
+  }
+  100% {
+    -webkit-transform:translate3d(0,0,0);
+  }
+}
+
+@-webkit-keyframes frame-ani2 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position:-3615px 0;
+    }
+}
+
+
+@media only screen and (max-width: 360px){
+    .play-test .sec-01 .ani-bg{
+        -webkit-transform:scale(.95);
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .play-test .sec-05 .share-bg{
+        width: 77.4vw;
+        height: 126vw;
+    }
+    .play-test .sec-01 .ani-bg{
+        -webkit-transform:scale(.93);    
+    }
+}
+@media only screen and (max-width: 340px){
+    .play-test .sec-01 .ani-bg{
+        -webkit-transform:scale(.9);    
+    }
+}
+
+@media only screen and (max-width: 330px){
+    .play-test .sec-01 .ani-bg{
+        -webkit-transform:scale(.88);    
+    }
+}
+
+@media only screen and (max-width: 320px) and (max-height: 500px){
+    .play-test .sec-05 .share-bg{
+        width: 69.66vw;
+        height: 113.4vw;
+    }
+}
+
+/*and (-webkit-device-pixel-ratio : 3)  calc( rem + px ) 有效果 */
+/*24px iphonex-top-h*/
+/*34px iphonex-bottom-h*/
+@media only screen and (device-width : 375px) and (device-height : 812px) ,
+(device-width : 414px) and (device-height : 896px) {
+
+    .play-test .bg-bot{
+        bottom: 34px;
+    }
+    .play-test .hd{
+        top: 5.4%;
+    }
+
+}
+
+
+

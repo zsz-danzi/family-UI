@@ -1,0 +1,195 @@
+/*==============================
+ * Project: 空间家族2.0
+ * Description: 主页
+ * @author: danzizhong
+ * Time：2018.12.29
+=================================*/
+
+@charset "utf-8";
+
+@import "reset.import.css";
+@import "ui-nav-v2.import.css";
+@import "ui-loading.import.css";
+@import "ui-dialog.import.css";
+@import "ui-level.import.css";
+@import "feeds.import.css";
+@import "fix-ios-x.import.css";
+@import "reset-rem.import.css";
+
+
+body{
+    padding-top: 0;
+}
+.ui-container{
+    padding-bottom: 54px;
+}
+/* family-bd 内容 */
+.family-bd{
+	background-color: #F6F6F6;
+	border-radius: 8px 8px 0px 0px;
+	padding: 0;
+	position: relative;
+	z-index: 2;
+}
+.family-bd .message-notice{
+	padding:8px;
+	background-color: #ffffff;
+	min-height: 24px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+.family-bd .message-notice .icon-notice{
+	width: 24px;
+	height: 24px;
+	background-image: url(img/slice/common/icon-notice@2x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: block;
+	margin-right: 8px;
+}
+.family-bd .message-notice .notice-txt{
+	-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+    margin-right: 0.1rem;
+    position: relative;
+    display: -webkit-box;
+    overflow: hidden;
+    word-wrap: break-word;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+.family-bd .message-notice .btn-notice{
+	width: 24px;
+	height: 24px;
+	display: block;
+	position: relative;
+}
+.family-bd .message-notice .btn-notice:after{
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-image: url(img/slice/common/icon-arrow-down@2x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	opacity: .16;
+}
+
+/*index 浮窗*/
+.fix-btn-group {
+    height: 32px;
+    text-align: center;
+    font-size: 0;
+    background-color: rgba(255,255,255,.64);
+    border-radius: 24px;
+    position: fixed;
+    bottom: 78px;
+    left: 50%;
+    margin-left: -109px;
+    padding:8px 4px;
+    -webkit-transform: scale(.1);
+    z-index: 20;
+    -webkit-animation: ani-show-scale ease .25s both;
+    -webkit-transform-origin: 50% 50%;
+    overflow: hidden;
+}
+.guest .fix-btn-group{
+	bottom: 122px;
+}
+.guest .ui-container{
+	padding-bottom: 114px;
+}
+.fix-btn-group .btn-fri, .fix-btn-group .btn-say, .fix-btn-group .btn-live {
+    width: 62px;
+    height: 32px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 22px;
+    padding:5px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #848494;
+    font-weight: 500;
+    margin:0 4px;
+    -webkit-transition: background-color ease .2s;
+    background-color: #222222;
+    border-radius: 16px;
+    color: #ffffff;
+}
+.fix-btn-group button i{
+	width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-image: url(img/slice/common/icon-live@2x.png);
+    background-size: cover;
+    margin-right: 4px;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+.fix-btn-group .btn-say i{
+    background-image: url(img/slice/common/icon-comments@2x.png);
+}
+.fix-btn-group .btn-fri i{
+    background-image: url(img/slice/common/icon-fri@2x.png);
+}
+.fix-btn-group button:active{
+	background-color: rgba(34,34,34,.8);
+}
+.feeds-item-bd .feeds-txt{
+	-webkit-line-clamp: 99;
+}
+.family-bd .btn-go-home{
+    width: 69px;
+    height: 69px;
+    background-image: url(img/slice/feeds/icon-family@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: right;
+    font-size: 0;
+    text-indent: -9999em;
+    margin-top: 26px;
+}
+
+@-webkit-keyframes ani-show-scale{
+	0%{
+		opacity: 0;
+		-webkit-transform:scale(.1);
+	} 
+	100%{
+		opacity: 1;
+		-webkit-transform:scale(1);
+	} 
+} 
+
+/*and (-webkit-device-pixel-ratio : 3)  calc( rem + px ) 有效果 */
+/*24px iphonex-top-h*/
+/*34px iphonex-bottom-h*/
+@media only screen and (device-width : 375px) and (device-height : 812px) ,
+(device-width : 414px) and (device-height : 896px) {
+
+
+    /*主页适配*/     
+    .ui-container .family-hd:after{
+        top: -88px;
+    }
+	
+	.ui-container{
+		padding-bottom: 76px;
+	}
+
+
+}

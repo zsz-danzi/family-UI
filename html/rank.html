@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>排行榜</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <link rel="stylesheet" href="../rank.css">
+</head>
+
+<body>
+
+<div class="mod-rank">
+
+	<!-- tab S -->
+	<!-- state-01~4 -->
+	<div class="rank-tab state-01">
+		<span class="tab-item active">日榜</span>
+		<span class="tab-item">周榜</span>
+		<span class="tab-item">月榜</span>
+		<span class="tab-item">总榜</span>
+		<span class="effect"></span>
+		<a href="javascript:;" class="btn-search">搜索</a>
+	</div>
+	<!-- tab E -->
+
+    <div class="rank-top">
+        <div class="front-item">
+            <div class="item-bg">
+                <span class="item-img" style="background-image: url(http://m.qpic.cn/psb?/V13KezIO0Wq0Hq/vYZ8Oxgh33mIek6RYovdQq7M4e69pLe9pSzaGCrNiSI!/m/dFQBAAAAAAAA&ek=1&kp=1&pt=0&bo=wAPAA8ADwAMRECc!&tl=1&su=059480369&vuin=3354289751&tm=1550646000&sce=0-12-12&rf=0-0);">
+                    <i class="ui-icon-svip cyear l7"></i>
+                </span>
+                <i class="hat"></i>
+            </div>
+
+            <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><i class="icon-m-vip l1"></i><i class="icon-m-vip l1"></i></p>
+            <p class="item-num">3712</p>
+			
+			<div class="cvs" style="display: none">
+				<canvas id="cvs"></canvas>
+			</div>
+
+        </div>
+        <div class="front-item">
+            <div class="item-bg">
+                <span class="item-img">
+                    <i class="ui-icon-svip cyear l7"></i>
+                </span>
+                <i class="hat"></i>
+            </div>
+
+            <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+            <p class="item-num">3712</p>
+        </div>
+        <div class="front-item">
+            <div class="item-bg">
+                <span class="item-img">
+                    <i class="ui-icon-svip cyear l7"></i>
+                </span>
+                <i class="hat"></i>
+            </div>
+
+            <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+            <p class="item-num">3712</p>
+        </div>
+    </div>
+            
+    <div class="rank-hd">  
+        <div class="rich-list">
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img hat">
+                    <i class="ui-icon-svip cyear l7"></i>
+                </span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><i class="icon-m-vip l1"></i><i class="icon-auth"></i></p>
+                <p class="item-num">3680</p>
+            </div>
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img hat">
+                    <i class="ui-icon-svip cyear l7"></i>
+                </span>
+                <p class="item-name">好友昵称<i class="icon-m-vip l3"></i></p>
+                <p class="item-num">3680</p>
+            </div>
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img">
+                    <i class="ui-icon-svip cyear l7"></i>
+                </span>
+                <p class="item-name">好友昵称<i class="icon-m-vip l5"></i></p>
+                <p class="item-num">3680</p>
+            </div>
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img"></span>
+                <p class="item-name">好友昵称<i class="icon-m-vip l8"></i></p>
+                <p class="item-num">3680</p>
+            </div> 
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img"></span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+                <p class="item-num">3680</p>
+            </div> 
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img"></span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+                <p class="item-num">3680</p>
+            </div> 
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img"></span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+                <p class="item-num">3680</p>
+            </div> 
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img"></span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+                <p class="item-num">3680</p>
+            </div> 
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img"></span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+                <p class="item-num">3680</p>
+            </div> 
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img"></span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+                <p class="item-num">3680</p>
+            </div> 
+            <div class="list-item">
+                <p class="rank-num">4</p>
+                <span class="item-img">
+                    <i class="ui-icon-svip cyear l7"></i>
+                </span>
+                <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"></p>
+                <p class="item-num">3680</p>
+            </div>  
+            <span class="refresh"></span> 
+            <div class="ui-loading"><i class="icon-load"></i> <span class="txt">正在加载更多...</span></div>   
+        </div>
+    </div> 
+    
+    <div class="rank-bot">
+
+    	<div class="rank-list">
+	        <p class="rank-num">4</p>
+	        <span class="item-img hat">
+	        </span>
+	        <p class="item-name">好友昵称<img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><img src="http://qzonestyle.gtimg.cn/qzone/em/e400824@2x.gif" alt="" class="src"><i class="icon-m-vip l5"></i></i></p>
+	        <p class="item-num">3680</p>
+    	</div>
+
+    	<p class="vip-txt">开通豪华黄钻创建家族，或加入家族</p>
+	
+		<a href="javascript:;" class="btn-go">开通豪华黄钻</a>
+    </div>
+
+	<!-- 支付浮层 S-->
+	<div class="mod-open-vip mod-v3 " style="display: none">
+	    <div class="open-vip">
+	      <button class="btn-close" id="btn-close"></button>
+	      <!--tab-new是新的切换，旧的去掉tab-new-->
+	      <!--no-tab 是新的去掉底部的..切换-->
+	      <!--<div class="tab-bar tab-new no-tab">-->
+	      <div class="tab-bar">
+	        <div class="mod-nav line">
+	          <div class="qui-nav nav-type-2">
+	            <a class="nav-item qz-vip active">
+	              <span class="nav-txt">黄钻贵族</span>
+	            </a>
+	            <a class="nav-item qz-svip">
+	              <span class="nav-txt">豪华黄钻</span>
+	            </a>
+	          </div>
+	          <div class="mod-dot">
+	            <b class="dot active"></b>
+	            <b class="dot"></b>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="info-content">
+	        <div class="info-list">
+	          <div class="list-wrap line">
+	            <div class="list-item item-qq">
+	              <i class="item-ico"></i>
+	              <span class="item-txt">1002657703<span> (<span class="user-name">大雄</span>)</span></span>
+	            <span class="item-right">
+	              <a class="link-color" href="javascript:;">赠送好友</a>
+	            </span>
+	            </div>
+	          </div>
+	          <div class="list-wrap line">
+	            <div class="list-item item-month" flex="main:center cross:center">
+	              <i class="item-ico"></i>
+	              <span class="item-txt"></span>
+	              <p class="item-op"  flex="dir:left box:mean">
+	                <button class="qui-btn middle selectStyle hot">
+	                  <span>3个月</span>
+	                  <!--<span class="sub"><i></i>25元</span>-->
+	                </button>
+	                <button class="qui-btn middle selectStyle active">
+	                  <span>6个月</span>
+	                  <!--<span class="sub">55元</span>-->
+	                </button>
+	                <button class="qui-btn middle selectStyle">
+	                  <span>12个月</span>
+	                  <!--<span class="sub"><i></i>115元</span>-->
+	                </button>
+	                <button class="qui-btn middle selectStyle select-input">
+	                  <!--<span>其他</span>-->
+	                  <input type="number" pattern="[0-9]*" maxlength="3" id="j-custom-month-update" placeholder="其他" value="">
+	                  <!--<span class="sub"><i></i>115元</span>-->
+	                </button>
+	                <!--<button class="qui-btn middle selectStyle update">-->
+	                  <!--<span>升级</span>-->
+	                <!--</button>-->
+	              </p>
+	              <a class="item-right">
+
+	              </a>
+	            </div>
+	          </div>
+	          <div class="list-wrap line">
+	            <div class="list-item item-price">
+	              <i class="item-ico"></i>
+	              <span class="item-txt"><span class="lighthigh">57</span>元<del class="txtDel">原价60元</del></span>
+	              <span class="item-right">
+	                <span class="mod-module mod-checkbox" style="position: absolute;top:0px;right: 100px">
+	                  <input type="checkbox" value="1" id="chkInputTest2" name="" checked="">
+	                  <label for="chkInputTest2"><span class="tips">沙箱测试</span></label>
+	                </span>
+	                <span class="mod-module mod-checkbox">
+	                  <i class="tips-checkbox"></i>
+	                  <input type="checkbox" value="1" id="chkInputTest" name="" checked="">
+	                  <label for="chkInputTest"><span class="tips">自动续费</span></label>
+	                </span>
+	              </span>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="btn-bar"  style="display: block;">
+	        <button class="btn-submit">立即开通</button>
+	        <button class="btn-friendPay ">好友代付</button>
+	      </div>
+	      <div class="overtime-bar line">
+	        <span>2018年2月9日到期</span>
+	        <a class="link-vip-home" href="http://i.qq.com">黄钻官网</a>
+	      </div>
+	    </div>
+	    <div class="dialog-discount">
+	      <div class="info-content">
+	        <div class="list-wrap line">
+	          <div class="list-item item-discount">
+	            <i class="item-ico"></i>
+	            <span class="item-txt">满60减3元</span>
+	            <!--<span class="item-txt disable">无可用优惠券</span>-->
+	                <span class="item-right">
+	                  <a class="btn-arrow">下拉</a>
+	                </span>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="discount-list">
+	        <div class="discount-scroll">
+	          <div class="discount-item active">
+	            <span class="price"><b class="price-cut" data-cut="3"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>购买3个月及以上黄钻贵族可用</p>
+	            </div>
+	          </div>
+	          <div class="discount-item">
+	            <span class="price"><b class="price-cut" data-cut="3"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>购买3个月及以上黄钻贵族可用</p>
+	            </div>
+	          </div>
+	          <h2>不可用优惠券</h2>
+	          <p class="none-tips">没有更多优惠券了哦~</p>
+	          <div class="discount-item disable">
+	            <span class="price"><b class="price-cut" data-cut="16"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>1.仅首开用户可用；2.满30元可立减8元；3.仅限安卓预费用户可用;</p>
+	            </div>
+	          </div>
+	          <div class="discount-item disable">
+	            <span class="price"><b class="price-cut" data-cut="32"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>购买3个月及以上黄钻贵族可用</p>
+	            </div>
+	          </div>
+	          <div class="discount-item disable">
+	            <span class="price"><b class="price-cut" data-cut="32"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>购买3个月及以上黄钻贵族可用</p>
+	            </div>
+	          </div>
+	          <div class="discount-item disable">
+	            <span class="price"><b class="price-cut" data-cut="32"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>购买3个月及以上黄钻贵族可用</p>
+	            </div>
+	          </div>
+	          <div class="discount-item disable">
+	            <span class="price"><b class="price-cut" data-cut="32"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>购买3个月及以上黄钻贵族可用</p>
+	            </div>
+	          </div>
+	          <div class="discount-item disable">
+	            <span class="price"><b class="price-cut" data-cut="32"><i class="ico-rmb"></i></b></span>
+	            <div class="detail">
+	              <p class="title">满240减32</p>
+	              <p>有效期至2017-4-6</p>
+	              <p>购买3个月及以上黄钻贵族可用</p>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <div class="discount-op">
+	        <p class="item-op">
+	          <button class="qui-btn middle bor">
+	            <span>不使用优惠券</span>
+	          </button>
+	          <button class="qui-btn middle bor bg">
+	            <span>确定</span>
+	          </button>
+	        </p>
+	      </div>
+	    </div>
+  	</div>
+	<!-- 支付浮层 E-->
+
+</div>
+
+
+<script src="../js/zepto.js"></script>
+<script src="../js/Tween.js"></script>
+<script src="../js/particle.js"></script>
+<script>
+
+	$('.btn-close').on('click',function(){
+		$('.mod-open-vip').hide();
+	})
+
+	let index = 0;
+	let pre_index = 0;
+
+	$('.rank-tab .tab-item').on('click',function(){
+		index = $(this).index();
+		$('.rank-tab').attr('class','rank-tab state-0'+(index+1));
+		$('.rank-tab').children().eq(pre_index).removeClass('active');
+		$(this).addClass('active');
+		pre_index = index;
+	})
+
+	Particle.init();
+
+
+</script>
+
+</body>
+</html>

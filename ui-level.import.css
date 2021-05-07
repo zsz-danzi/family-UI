@@ -1,0 +1,145 @@
+/*==============================
+ * Project: 等级勋章
+ * Description: 等级勋章组件
+ * @author: danzizhong
+ * Time：2018.08.30
+=================================*/
+/*勋章LV1~LV8*/
+.icon-m-vip{
+    width: 58px;
+    height: 24px;
+    background-image: url(img/slice/medal/LV1@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+.icon-s-vip{
+    width: 33px;
+    height: 16px;
+    background-image: url(img/slice/medal/LV1-s@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-m-vip.l1{
+    background-image: url(img/slice/medal/LV1@2x.png);
+}
+.icon-m-vip.l2{
+    background-image: url(img/slice/medal/LV2@2x.png);
+}
+.icon-m-vip.l3{
+    background-image: url(img/slice/medal/LV3@2x.png);
+}
+.icon-m-vip.l4{
+    background-image: url(img/slice/medal/LV4@2x.png);
+}
+.icon-m-vip.l5{
+    background-image: url(img/slice/medal/LV5@2x.png);
+}
+.icon-m-vip.l6{
+    background-image: url(img/slice/medal/LV6@2x.png);
+}
+.icon-m-vip.l7{
+    background-image: url(img/slice/medal/LV7@2x.png);
+}
+.icon-m-vip.l8{
+    background-image: url(img/slice/medal/LV8@2x.png);
+}
+
+.icon-s-vip.l1{
+    background-image: url(img/slice/medal/LV1-s@2x.png);
+}
+.icon-s-vip.l2{
+    background-image: url(img/slice/medal/LV2-s@2x.png);
+}
+.icon-s-vip.l3{
+    background-image: url(img/slice/medal/LV3-s@2x.png);
+}
+.icon-s-vip.l4{
+    background-image: url(img/slice/medal/LV4-s@2x.png);
+}
+.icon-s-vip.l5{
+    background-image: url(img/slice/medal/LV5-s@2x.png);
+}
+.icon-s-vip.l6{
+    background-image: url(img/slice/medal/LV6-s@2x.png);
+}
+.icon-s-vip.l7{
+    background-image: url(img/slice/medal/LV7-s@2x.png);
+}
+.icon-s-vip.l8{
+    background-image: url(img/slice/medal/LV8-s@2x.png);
+}
+
+.icon-m-vip.l1,
+.icon-m-vip.l3,
+.icon-m-vip.l4,
+.icon-m-vip.l5,
+.icon-m-vip.l7{
+    margin-left: 0px;
+}
+.icon-m-vip.l2,
+.icon-m-vip.l6,
+.icon-m-vip.l8{
+    margin-left: 0px;
+}
+.icon-auth{
+    width: 58px;
+    height: 24px;
+    background-image: url(img/slice/medal/auth@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;
+    margin-left: 0;
+}
+
+
+/*v2版本*/
+.icon-vip{
+    width: 24px;
+    height: 24px;
+    background-image: url(img/slice/medal/v2/LV1@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -4px;   
+}
+.icon-vip.l1{
+    background-image: url(img/slice/medal/v2/LV1@2x.png);  
+}
+.icon-vip.l2{
+    background-image: url(img/slice/medal/v2/LV2@2x.png);  
+}
+.icon-vip.l3{
+    background-image: url(img/slice/medal/v2/LV3@2x.png);  
+}
+.icon-vip.l4{
+    background-image: url(img/slice/medal/v2/LV4@2x.png);  
+}
+.icon-vip.l5{
+    background-image: url(img/slice/medal/v2/LV5@2x.png);  
+}
+.icon-vip.l6{
+    background-image: url(img/slice/medal/v2/LV6@2x.png);  
+}
+.icon-vip.l7{
+    background-image: url(img/slice/medal/v2/LV7@2x.png);  
+}
+.icon-vip.l8{
+    background-image: url(img/slice/medal/v2/LV8@2x.png);  
+}
+.icon-vip.auth{
+    background-image: url(img/slice/medal/v2/auth@2x.png);  
+}

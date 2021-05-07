@@ -1,0 +1,39 @@
+/*
+ * Basic reset css for mobile
+ * author : cheunglong
+ */
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote,a,address,
+em, img, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td,i,b, s {
+    margin:0; padding:0; border:0; font-weight:inherit; font-style:inherit; font-size:100%;font-family:"Helvetica neue", Helvetica, Tahoma, Arial, "\5FAE\8F6F\96C5\9ED1", "\5B8B\4F53", sans-serif;
+}
+
+ul,ol{list-style: none}
+a img { border:none;vertical-align: top; }
+a {text-decoration: none;}
+
+button {overflow:visible;padding:0;margin:0;border:0 none;background-color:transparent;}
+button::-moz-focus-inner { padding:0;}
+
+textarea,input{background:none;padding:0;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0;-webkit-appearance:none;}
+input[type=password] {-webkit-text-security:disc;}
+textarea:focus,input:focus,button:focus{outline:none;}
+body {word-wrap:break-word;}
+* {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+
+
+
+/*引入字体库*/
+@font-face{    
+ 	font-family: 'din';    
+ 	src: url('font/DIN.ttf'), 
+ 	  	 url('font/DIN.woff'), 
+ 	  	 url('font/DIN.eot'); 
+ 	font-weight: normal;    
+ 	font-style: normal;  
+}
+@font-face{    
+ 	font-family: 'din-bold';    
+ 	src: url('font/D-DIN-Bold.otf'); 
+ 	font-weight: normal;    
+ 	font-style: normal;  
+}

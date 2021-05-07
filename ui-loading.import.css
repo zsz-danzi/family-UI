@@ -1,0 +1,46 @@
+/*==============================
+ * Copy Right: Tencent ISUX
+ * Project: Qzone Touch
+ * Description: component  ui-loading rem
+ * @author: tanktan
+=================================*/
+.ui-loading{width: 100%;text-align: center;padding:.3rem 0;}
+.ui-loading .icon-load{
+  display: inline-block;position: relative;vertical-align: middle;width: .24rem;height: .24rem;overflow: hidden;
+  border:.04rem solid #ccc;
+  border-right-color:transparent;
+  -webkit-border-radius:.32rem;
+  -moz-border-radius:.32rem;
+  border-radius:.32rem;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation: rotate 0.75s 0s linear infinite;
+  animation: rotate 0.75s 0s linear infinite;
+}
+@-webkit-keyframes rotate {
+  0% { -webkit-transform: rotate(0);}
+  50% {-webkit-transform: rotate(180deg);}
+  100% {-webkit-transform: rotate(360deg);}
+}
+@-moz-keyframes rotate {
+  0% { -moz-transform: rotate(0);}
+  50% {-moz-transform: rotate(180deg);}
+  100% {-moz-transform: rotate(360deg);}
+}
+@keyframes rotate {
+  0% { transform: rotate(0);}
+  50% {transform: rotate(180deg);}
+  100% {transform: rotate(360deg);}
+}
+/* .ui-loading .icon-down {display: inline-block;width: 16px;height: 16px;background-image: url(img/slice/darr-blue.png);vertical-align: middle;} */
+.ui-loading .txt{display: inline-block;vertical-align: middle;font-size: .24rem;color: #a5a5a5;}
+.ui-loading .btn {
+  width: 100%;padding:.28rem 0;color:#285c9d;font-size: .28rem;
+  background-color: #fff;
+  /*border:1px solid #ccc;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;*/
+}
+/* .ui-loading .icon-load+.txt {color:#a5a5a5;}
+.ui-loading .icon-down+.txt {color:#00a5e0;} */

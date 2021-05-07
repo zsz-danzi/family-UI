@@ -1,0 +1,41 @@
+.mod-tips{
+    position: fixed;
+    top:44px;
+    top:80px;
+    left: 16px;
+    z-index: 3;
+}
+.mod-tips .icon-success{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(img/slice/common/icon-success@2x.png);
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 5px;
+    position: relative;
+    top: -1px;
+}
+.mod-tips .tips-success{
+    height: 44px;
+    line-height: 44px;
+    opacity: 0.96;
+    background: #222222;
+    box-shadow: 0 2px 4px 0 rgba(34,34,34,0.16);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 12px;
+
+    transform: translateY(-200%);
+    opacity: 0;
+}
+.mod-tips .tips-success.show{
+    animation: show-tips 3.5s ease-in-out;
+}
+@keyframes show-tips {
+    0%{transform: translateY(-200%);opacity: 0;}
+    20%{transform: translateY(0%);opacity: 1;}
+    70%{transform: translateY(0%);opacity: 1;}
+    100%{transform: translateY(0%);opacity: 0;}
+}

@@ -1,0 +1,191 @@
+/*==============================
+ * Project: 空间家族2.0
+ * Description: 扩列
+ * @author: danzizhong
+ * Time：2018.12.29
+=================================*/
+
+@charset "utf-8";
+@import "reset.import.css";
+@import "reset-rem.import.css";
+@import "ui-dialog.import.css";
+@import "action-native.import.css";
+@import "fix-ios-x.import.css";
+
+body{
+	min-height: 100vh;
+    background-image: -webkit-linear-gradient(0deg, #F93986, #FF35D9);
+    background-image: linear-gradient(0deg, #F93986, #FF35D9);
+    /*background-color: #000;*/
+}
+.friend-data{
+	padding-top: 64px;
+	overflow: hidden;
+	font-weight: 500;
+	color: #000000;
+}
+.friend-data .fri-hd{
+	width: 100%;
+	padding-top: 10px;
+	height: 89.466667vw;
+	padding-bottom: 90px;
+	margin:0 auto;
+}
+/*fri-bd*/
+.fri-bd{
+	position: relative;
+	z-index: 2;
+	border-radius: 8px 8px 0 0;
+	background-color: #ffffff;
+	min-height: 50vh;
+	padding-bottom: 20px;
+}
+.fri-bd .fri-info{
+	margin:0 16px;
+	background-color: #ffffff;
+	-webkit-transform:translateY(-50%);
+	border-radius: 8px;
+	box-shadow: 0 0 17px 0 rgba(207,57,145,0.15);
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+	padding:0 16px;
+}
+.fri-bd .fri-info .fri-option{
+	height: 49px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+}
+.fri-bd .fri-info .fri-option:last-child:after{
+	display: none;
+}
+.fri-bd .fri-info .fri-option .fri-txt{
+	-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+	font-size: 16px;
+}
+.fri-bd .fri-info .fri-option span{
+	opacity: .48;
+	margin-right: 12px;
+}
+.fri-bd .fri-info .fri-option em{
+	font-weight: bold;
+}
+.fri-bd .fri-info .fri-option select{
+	position: relative;
+	z-index: 2;
+	margin-left: -40px;
+	border: none;
+	opacity: 0;
+	width: 70%;
+	position: absolute;
+	right: 0;
+	height: 100%;
+	top: 0;
+}
+.fri-bd .fri-info .fri-option .btn-choice{
+	width: 18px;
+	height: 18px;
+	background-image: url(img/slice/friend-data/icon-arrow@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	display: block;
+}
+.fri-bd .fri-info .fri-option:after{
+	content: "";
+	width: 100%;
+	height: 1px;
+	background-color: #FFE8F6;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+/*fri-group*/
+.fri-bd .fri-group{
+	padding:0 16px;
+	margin-top: -72px;
+}
+.fri-bd .fri-group .fri-list{
+	height: 68px;
+	display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;	
+	font-size: 14px;
+}
+.fri-bd .fri-group .fri-list .list-name{
+	line-height: 16px;
+	margin-right: 12px;
+	margin-top: -34px;
+	min-width: 42px;
+}
+.fri-bd .fri-group .fri-list .list-data{
+	-webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-width: 0;
+}
+.fri-bd .list-data .data-bar{
+	width: 100%;
+	height: 4px;
+	border-radius: 10px;
+	background-color: rgba(254,53,211,.1);
+}
+.fri-bd .list-data .data-progress{
+	width: 100%;
+	height: 4px;
+    display: block;
+    border-radius: 10px;
+    position: relative;
+	background-color: rgba(254,53,211,1);
+    max-width: 100%;
+}
+.fri-bd .list-data .data-progress .data-val{
+	width: 48px;
+	height: 44px;
+	background-image: url(img/slice/friend-data/icon-btn@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: -24px;
+	top: -17px;
+	color: #FE35D3;
+	font-size: 14px;
+	text-align: center;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	line-height: 14px;
+	padding-top: 12px;
+	font-family: "din-bold";
+}
+.fri-bd .list-data .data-status{
+	padding-top: 21px;
+	line-height: 1;
+	color: #E1E1E1;
+}
+.fri-bd .list-data .data-status .data-fl{
+	float: left;
+}
+.fri-bd .list-data .data-status .data-fr{
+	float: right;
+}
+.fri-bd .list-data .data-status.more .data-fr{
+	color: #FE35D3;
+}
+

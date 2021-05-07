@@ -1,0 +1,136 @@
+/*==============================
+ * Project: 空间家族
+ * Description: 热门家族
+ * @author: colorcai
+ * Time：2018.08.21
+=================================*/
+
+.family-hot{
+	/*width: 7rem;*/
+	width: 100%;
+	box-sizing: border-box;
+	padding: .37rem .24rem .37rem;
+	text-align: center;
+	margin-bottom: 48px;
+}
+.family-hot.fix-bottom{
+	position: fixed;
+	bottom:0
+}
+.family-hot .hot-content{
+	width: 100%;
+	padding: .42rem 0;
+	background: #F9FAFE;
+	border-radius: 6px;
+}
+.family-hot .hot-title .ico{
+	width: 6px;
+	height: 6px;
+	background-color: #FFF389;
+	background-image: linear-gradient(-180deg, #FFF389 0%, #FFE251 100%);
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 10px;
+	border-radius: 999px;
+}
+.family-hot .hot-title{
+	font-size: .28rem;
+	color: #292422;
+	line-height: .34rem;
+	font-weight: bold;
+}
+.family-hot .hot-list{
+	font-size: 0;
+	padding: .32rem .12rem .42rem;
+}
+.family-hot .hot-item{
+	display: inline-block;
+	position: relative;
+	width: 25%;
+	padding: 0 .12rem;
+	box-sizing: border-box;
+	box-shadow: 0 3px 8px 0 rgba(40,40,40,0.06);
+	margin-top: .62rem;
+}
+.family-hot .hot-item:before{
+	content: '';
+	width: 100%;
+	padding-top: 95.9%;
+	background-color: #fff;
+	background-image: linear-gradient(-90deg, #FFFFFF 0%, #FFFFFF 100%);
+	display: block;
+}
+.family-hot .hot-item .hot-img{
+	width: 1.04rem;
+	margin: 0 auto;
+	position: absolute;
+	top:0;
+	left: 0;
+	right: 0;
+	clip-path: inset(10% round 50% 50% 50% 50%);
+}
+.family-hot .hot-item .hot-name{
+	font-size: .2rem;
+	color: #4F4F4F;
+	font-weight: bold;
+	line-height: .24rem;
+	width: 80%;
+	position: absolute;
+	bottom: .2rem;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	white-space: nowrap;
+	word-wrap: normal;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.family-hot .hot-more{
+	font-size: .24rem;
+	line-height: .28rem;
+	color: #8B8B8B;
+}
+
+.family-hot .hot-item .avatar {
+	width: 1.68rem;
+	height: 1.68rem;
+	position: absolute;
+	left: 50%;
+	z-index: 2;
+	display: block;
+	transform: scale(.76) translateX(-65%) translateY(-64%);
+	top: 0;
+}
+.family-hot .hot-item .avatar span {
+	width: 1.68rem;
+	height: 1.68rem;
+	display: block;
+	background-image: url(img/normal.png);
+	background-size: cover;
+	background-position: 50% 50%;
+/*	-webkit-mask-image: url(img/home/item-02.png);
+	mask-image: url(img/home/item-02.png);*/
+	-webkit-mask-size: cover;
+	background-repeat: no-repeat;
+	border-radius: 8px;
+}
+.family-hot .hot-item .avatar:after {
+	content: "";
+	width: 1.84rem;
+	height: 2.04rem;
+	background-image: url(img/home/item-01.png);
+	background-size: cover;
+	position: absolute;
+	top: -0.04rem;
+	left: -0.12rem;
+	z-index: 2;
+	display: none;
+}
+
+.feed-blank .blank-bg.small{
+	width: 3.42rem;
+	height: 2.05rem;
+	margin: .3rem auto;
+	/*background-image: url(img/kong-small.png);*/
+}

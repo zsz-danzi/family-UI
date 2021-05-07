@@ -1,0 +1,218 @@
+/*==============================
+ * Project: 空间家族2.0
+ * Description: 招募入口
+ * @author: danzizhong
+ * Time：2019.01.08
+=================================*/
+@charset "utf-8";
+@import "reset.import.css";
+@import "ui-nav-v2.import.css";
+@import "ui-dialog.import.css";
+@import "ui-loading.import.css";
+@import "ui-level.import.css";
+@import "action-native.import.css";
+@import "fix-ios-x.import.css";
+@import "reset-rem.import.css";
+
+.recruit-enter{}
+.recruit-enter .recruit-hd{
+    width: 100%;
+    height: 72.533333vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    background-image: url(img/recruit/bg-vip.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+.recruit-enter .recruit-hd.svip{
+    background-image: url(img/recruit/bg-svip.png);
+}
+.recruit-enter .recruit-hd .recruit-txt{
+    font-size: 16px;
+    color: #7A5701;
+    line-height: 24px;
+    padding-top: 21.333333vw;
+    padding-left: 16px;
+    padding-bottom: 12px;
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.recruit-enter .recruit-hd.svip .recruit-txt{
+    color: #FFF70D;
+}
+.recruit-enter .recruit-hd .recruit-txt:after{
+    content: "";
+    width: 32px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+    background-color: #7A5701;
+}
+.recruit-enter .recruit-hd.svip .recruit-txt:after{
+    background-color: rgba(255,255,255,.32);
+}
+.recruit-enter .recruit-hd .btn-go{
+    display: inline-block;
+    padding:12px 18px;
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    color: #FFF70D;
+    background-color: rgba(122,87,1,.96);
+    margin-left: 16px;
+    border-radius: 8px;
+}
+.recruit-enter .recruit-hd.svip .btn-go{
+    color: #1B223E;
+    background-color: rgba(255,247,13,.96);
+}
+.recruit-enter .recruit-list{
+    margin-top: -8px;
+    border-radius: 8px 8px 0 0;
+    padding-top: 16px;
+    position: relative;
+    z-index: 20;
+    background-color: #f0f0f0;
+    min-height: 100px;
+}
+
+/*招募详情 弹窗*/
+.dialog-recruit{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 42;
+    background-color: rgba(34,34,34,.8);
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0 16px;
+}
+.dialog-recruit .recruit-details{
+    width: 100%;
+    height: 78vh;
+    position: relative;
+    top: 50%;
+    left: 0;
+    -webkit-transform:translateY(-48%);
+    background-color: #fff;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding-bottom: 98px;
+    border-radius: 8px;
+}
+.dialog-recruit .recruit-list{
+    padding:0 0;
+    height: 100%;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.dialog-recruit .recruit-bot{
+    width: 100%;
+    position: absolute;
+    bottom: 16px;
+    height: 76px;
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:8px 16px 0;
+}
+.dialog-recruit .recruit-bot .btn-go{
+    width: 100%;
+    height: 16px;
+    line-height: 16px;
+    font-size: 16px;
+    padding: 14px 0;
+    background-color: #FFF70D;
+    border-radius: 4px;
+    color: #7A5701;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+} 
+.dialog-recruit .recruit-bot .btn-go:before{
+    content: "";
+    height: 1px;
+    background-color: rgba(34,34,34,.04);
+    position: absolute;
+    top: -17px;
+    width: 100%;
+    left: 0;
+}
+.recruit-list .list-item .btn-menu{
+    width: 20px;
+    height: 20px;
+    background-image: url(img/slice/feeds/feeds-menu@2x.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+}
+.recruit-list .list-item .btn-menu:after{
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+.dialog-recruit .recruit-list .list-item .tag-txt{
+    font-weight: bold;
+}
+.dialog-recruit .btn-close{
+    padding: 10px;
+    /* background: #fff; */
+    position: absolute;
+    border-radius: 999px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+    margin: 0;
+}
+.dialog-recruit .btn-close:before{
+    display: block;
+    width: 74px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-image: url(img/slice/dialog/btn-desc@2x.png);
+    position: absolute;
+    content: '';
+    bottom: 2px;
+    left: 50%;
+    margin-left: -37px;
+}
+.dialog-recruit .btn-close .icon{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    background-image: url(img/slice/dialog/dia-close2@2x.png);
+    position: relative;
+}
+.ui-container{
+    padding: 0;
+    border-radius: 0;
+    padding-bottom: 54px;
+}
+
+
+@media only screen and (device-width : 375px) and (device-height : 812px) ,
+(device-width : 414px) and (device-height : 896px) {
+
+    .recruit-enter .recruit-hd{
+        padding-top: 7vw;
+        height: 79.533333vw;
+    }
+    .dialog-recruit .recruit-details{
+        height: 74vh;
+    }
+
+
+}

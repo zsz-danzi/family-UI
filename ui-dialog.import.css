@@ -1,0 +1,353 @@
+/*==============================
+ * Project: 空间家族2.0
+ * Description: 弹窗组件
+ * @author: danzizhong
+ * Time：2019.01.08
+=================================*/
+.mod-dialog{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color: rgba(0,0,0,0.5);
+	text-align: center;
+	-webkit-animation:ani-op ease .2s;
+}
+.mod-dialog .dialog-inner{
+	width: 5.82rem;
+	padding:1.26rem 12px 12px;
+	min-height: 100px;
+	background-color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform:translate(-50%,-55%);
+	transform:translate(-50%,-55%);
+	border-radius: 4px;
+}
+.mod-dialog .dialog-inner.act-skr{
+	width: 100%;
+	background-color: transparent;
+	padding: 0;
+}
+.mod-dialog .dialog-inner.act-skr .skr-img{
+	width: 100%;
+	padding-top: 113.6%;
+	background-image: url(img/skr-bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	display: block;
+}
+.mod-dialog .dialog-inner.act-skr .act-img{
+	width: 100%;
+	-webkit-transform:translateY(-50%);
+	transform:translateY(-50%);
+}
+.mod-dialog .act-img img{
+	width: 100%;
+	display: block;
+	margin:0 auto;
+}
+.mod-dialog .dialog-inner .tips-img{
+	width: 2.54rem;
+	height: 2.54rem;
+	background-image: url(img/slice/rem/dialog/d-03@2x.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	top: -1.26rem;
+}
+.mod-dialog .dialog-inner .tips-tit{
+	padding:12px 0 0;
+	line-height: 31px;
+	font-size: 22px;
+	color: #494743;
+	font-weight: bold;
+}
+.mod-dialog .dialog-inner .tips-desc{
+	line-height: 20px;
+	font-size: 14px;
+	color: #5D5D5D;
+	margin: 7px 19px 0;
+	min-height: 40px;
+}
+.mod-dialog .dialog-inner .tips-desc a{
+	color: #6195dd;
+	padding: 0 5px;
+}
+.mod-dialog .dialog-inner .tips-desc .icon-hook{
+	width: 14px;
+	height: 14px;
+	background-image: url(img/slice/dialog/icon-01@2x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -2px;
+	margin-right: 4px;
+}
+.mod-dialog .dialog-inner .tips-desc .icon-hook.checked{
+	background-image: url(img/slice/dialog/icon-02@2x.png);
+}
+.mod-dialog .btn-go{
+	width: 100%;
+	height: 40px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	padding:12px 0;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	color:#000;
+	background-color: rgba(255,226,81,1);
+    -webkit-transition:background-color ease .2s;
+	display: block;
+	letter-spacing: 0.6px;
+	margin-top: 15px;
+	border-radius: 3px;	
+}
+.mod-dialog .btn-close{
+	width: 42px;
+	height: 42px;
+	background-image: url(img/slice/dialog/dia-close@2x.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: -80px;
+	left: 50%;
+	margin-left: -21px;
+	-webkit-transform:scale(1);
+	-webkit-transition:transform ease-out .2s;
+}
+.mod-dialog .btn-wrap{
+	position: relative;
+	height: 40px;
+	margin-top: 30px;
+}
+.mod-dialog .btn-wrap a{
+	width: 46.6%;
+	height: 40px;
+	padding:12px 0;
+	line-height: 16px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	font-size: 16px;
+	font-weight: bold;
+	float: left;
+	border-radius: 3px;
+}
+.mod-dialog .btn-wrap .btn-sure{
+	color: #000;
+    background-color: rgba(255,226,81,1);
+    -webkit-transition:background-color ease .2s;
+}
+.mod-dialog .btn-wrap .btn-cancel{
+	color: #FFDA00;
+	float: right;
+	border:1px solid #FFD400;
+}
+/*成功加入*/
+.mod-dialog .success-join .tips-img{
+	background-image: url(img/slice/rem/dialog/d-07@2x.png);
+}
+/*替换置顶*/
+.mod-dialog .replace-top .tips-img{
+	background-image: url(img/slice/rem/dialog/d-05@2x.png);
+}
+/*是否解散*/
+.mod-dialog .dissolution .tips-img{
+	background-image: url(img/slice/rem/dialog/d-02@2x.png);
+}
+/*提交成功*/
+.mod-dialog .dissolution .tips-img{
+	background-image: url(img/slice/rem/dialog/d-04@2x.png);
+}
+/*是否退出*/
+.mod-dialog .sign-out .tips-img{
+	background-image: url(img/slice/rem/dialog/d-03@2x.png);
+}
+/*温馨提示*/
+.mod-dialog .cozy-tips .tips-img{
+	background-image: url(img/slice/rem/dialog/d-01@2x.png);
+}
+/*提交失败*/
+.mod-dialog .fail-tips .tips-img{
+	background-image: url(img/slice/rem/dialog/d-06@2x.png);
+}
+/*温馨提示-v2*/
+.mod-dialog .cozy-tips-v2{
+	width: 6.86rem;
+	padding: 0 .32rem 16px;
+	text-align: left;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+	border-radius: 8px;
+}
+.mod-dialog .cozy-tips-v2 .tag{
+	padding:4px 7px;
+	font-size: 10px;
+	line-height: 10px;
+	color: #7A5701;
+	background-color: #FFDD07;
+	position: absolute;
+	border-radius: 0 0 3px 3px;
+}
+.mod-dialog .cozy-tips-v2 .tit{
+	font-size: 20px;
+	line-height: 20px;
+	color: #222222;
+	padding: 16px 0 12px;
+	position: relative;
+	font-weight: bold;
+}
+.mod-dialog .cozy-tips-v2 .tit:after{
+	content: '';
+	display: block;
+	background: #F6F6F6;
+	border-radius: 2px;
+	height: 4px;
+	width: 32px;
+	margin-top: 16px;
+	margin-bottom: -12px;
+}
+/*.mod-dialog .cozy-tips-v2 .tit:after{*/
+	/*content: "";*/
+    /*width: 100%;*/
+    /*position: absolute;*/
+    /*height: 1px;*/
+    /*left: 0;*/
+    /*border-bottom: 1px solid rgba(0,0,0,0.1);*/
+    /*bottom: -1px;*/
+    /*-ms-transform: scaleY(.5);*/
+    /*transform: scaleY(.5);*/
+    /*-webkit-transform: scaleY(.5);*/
+    /*z-index: 10;*/
+    /*display: none;*/
+/*}*/
+.mod-dialog .cozy-tips-v2 .icons{
+	padding: .56rem 0 .64rem;
+}
+.mod-dialog .cozy-tips-v2 .tips-icon{
+	display: block;
+	width: 52px;
+	height: 45px;
+	margin: 0 auto;
+	background-size: 100% 100%;
+	background-image: url(img/slice/feeds/Warning@2x.png);
+}
+.mod-dialog .cozy-tips-v2 .info-desc{
+	font-size: 16px;
+	color: #222222;
+	text-align: center;
+	line-height: 24px;
+	font-weight: bold;
+}
+.mod-dialog .cozy-tips-v2 .desc{
+	font-size: 16px;
+	line-height: 24px;
+	color: #707070;
+	padding:12px 0 12px 0;
+	font-weight: bold;
+}
+.mod-dialog .cozy-tips-v2 .desc-sub{
+	font-size: 12px;
+	line-height: 14px;
+	color: #ccc;
+	margin: -2px 0 20px;
+	font-weight: bold;
+}
+.mod-dialog .cozy-tips-v2 .btn-box a{
+	width: 47.43%;
+	font-size: 16px;
+	line-height: 16px;
+	padding:14px 0;
+	background-color: #F6F6F6;
+	float: left;
+	text-align: center;
+	border-radius: 4px;
+	font-weight: 500;
+	-webkit-transition:background-color ease .25s;
+	font-weight: bold;
+	color: #707070;
+}
+.mod-dialog .cozy-tips-v2 .btn-box a.btn-sure{
+	background-color: #FFF70D;
+	float: right;
+	color: #7A5701;
+}
+.mod-dialog .cozy-tips-v2 .btn-box a.btn-large{
+	width: 100%;
+	color: #222;
+	margin: 16px 0 20px 0;
+}
+.mod-dialog .cozy-tips-v2 .btn-box .btn-hide,
+.mod-dialog .cozy-tips-v2 .btn-box .btn-back{
+	padding: 10px;
+	/*background: #fff;*/
+	position: absolute;
+	border-radius: 999px;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom:-30px;
+	margin: 0;
+}
+.mod-dialog .cozy-tips-v2 .btn-box .btn-hide:before,
+.mod-dialog .cozy-tips-v2 .btn-box .btn-back:before{
+	display: block;
+	width: 74px;
+	height: 30px;
+	background-size: 100% 100%;
+	background-image: url(img/slice/dialog/btn-desc@2x.png);
+	position: absolute;
+	content: '';
+	bottom:2px;
+	left: 50%;
+	margin-left: -37px;
+}
+.mod-dialog .cozy-tips-v2 .btn-box .btn-hide .icon{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-size: 100% 100%;
+	background-image: url(img/slice/dialog/dia-close2@2x.png);
+	position: relative;
+}
+.mod-dialog .cozy-tips-v2 .btn-box .btn-back .icon{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-size: 100% 100%;
+	background-image: url(img/slice/dialog/dia-back@2x.png);
+	position: relative;
+}
+/*点击态*/
+.mod-dialog .cozy-tips-v2 .btn-box a:active{
+	background-color: rgba(204,204,204,.5);
+}
+.mod-dialog .cozy-tips-v2 .btn-box a.btn-sure:active{
+	background-color: rgba(229,200,7,.8);
+}
+.mod-dialog .btn-wrap .btn-sure:active{
+	background-color: rgba(255,226,81,.7);
+}
+.mod-dialog .btn-go:active{
+	background-color: rgba(255,226,81,.7);
+}
+.mod-dialog .btn-close:active{
+	-webkit-transform:scale(.8);
+}
+
+@-webkit-keyframes ani-op{
+    0% {
+    	opacity: 0
+    }
+    100% {
+    	opacity: 1;
+    }
+}
+

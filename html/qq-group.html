@@ -1,0 +1,197 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>我的页面</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+  <link rel="stylesheet" href="../index.css">
+</head>
+
+<body class=""><!--加home-index就是黄色顶部了-->
+	
+	<!-- 头部模拟组件 S-->
+	<div class="ui-nav">
+		<div class="ui-nav-l">
+			<a class="icon-back"></a>
+		</div>
+		<div class="ui-nav-r">
+			<a class="icon-back"></a>
+			<a class="icon-menu"></a>
+		</div>
+	</div>
+	<!-- 头部模拟组件 E-->
+
+	<!-- 组件内容 S-->
+	<div class="ui-container">
+		<!-- family-bd S-->
+		<div class="family-bd">
+			<div class="feeds-qqGroup-title">
+				<p>已关联</p>
+			</div>
+			<div class="feeds-qqGroup-list">
+				<!-- 关联QQ群 S-->
+				<div class="feeds-qqGroup">
+					<span class="fri-img"></span>
+					<div class="fri-info">
+						<p class="info-name">零零后扩列</p>
+						<p class="info-desc">由<span>天使小白</span>关联</p>
+					</div>
+					<a href="javascript:;" class="btn-fri menu">菜单</a>
+				</div>
+				<!-- 关联QQ群 E-->
+			</div>
+			<div class="feeds-qqGroup-title">
+				<p>群列表</p>
+				<p class="title-sub">每个家族最多关联2个QQ群</p>
+			</div>
+			<div class="feeds-qqGroup-list">
+				<!-- 关联QQ群 S-->
+				<div class="feeds-qqGroup">
+					<span class="fri-img radius"></span>
+					<div class="fri-info">
+						<p class="info-name">Sofie Hubert</p>
+						<!--<p class="info-desc">想扩的关系：<span>CP</span></p>-->
+					</div>
+					<a href="javascript:;" class="btn-fri joined">已加入</a>
+				</div>
+				<div class="feeds-qqGroup">
+					<span class="fri-img"></span>
+					<div class="fri-info">
+						<p class="info-name">Juan Esteban</p>
+						<p class="info-desc">群成员：<span>16</span></p>
+					</div>
+					<a href="javascript:;" class="btn-fri invited">已邀请</a>
+				</div>
+				<div class="feeds-qqGroup">
+					<span class="fri-img"></span>
+					<div class="fri-info">
+						<p class="info-name">零零后扩列</p>
+						<p class="info-desc">群成员：<span>16</span></p>
+					</div>
+					<a href="javascript:;" class="btn-fri enter">进入</a>
+				</div>
+				<div class="feeds-qqGroup">
+					<span class="fri-img"></span>
+					<div class="fri-info">
+						<p class="info-name">零零后扩列零零后扩列零零后扩列零零后扩列</p>
+						<p class="info-desc">群成员：<span>16</span></p>
+					</div>
+					<a href="javascript:;" class="btn-fri" id="btn-demo">邀请</a>
+				</div>
+				<div class="feeds-qqGroup">
+					<span class="fri-img"></span>
+					<div class="fri-info">
+						<p class="info-name">一个奇葩群名</p>
+						<p class="info-desc">群成员：<span>16</span></p>
+					</div>
+					<a href="javascript:;" class="btn-fri">关联</a>
+				</div>
+				<div class="feeds-qqGroup">
+					<span class="fri-img"></span>
+					<div class="fri-info">
+						<p class="info-name">一个奇葩群名</p>
+						<p class="info-desc">群成员：<span>16</span></p>
+					</div>
+					<a href="javascript:;" class="btn-fri">关联</a>
+				</div>
+				<div class="feeds-qqGroup">
+					<span class="fri-img"></span>
+					<div class="fri-info">
+						<p class="info-name">一个奇葩群名</p>
+						<p class="info-desc">群成员：<span>16</span></p>
+					</div>
+					<a href="javascript:;" class="btn-fri">关联</a>
+				</div>
+				<!-- 关联QQ群 E-->
+			</div>
+
+		</div>
+		<!-- family-bd S-->	
+	</div>
+	<!-- 组件内容 E-->
+	<div class="mod-tips">
+		<p class="tips-success"><i class="icon-success"></i>关联QQ群成功</p>
+	</div>
+	<div class="mod-action" style="display: none;">
+
+		<div class="action-wrap" style="display: none">
+			<a href="javascript:;" class="btn">拍摄</a>
+			<a href="javascript:;" class="btn">从手机上册选择照片</a>
+			<a href="javascript:;" class="btn alien">空间相册选择</a>
+			<a href="javascript:;" class="btn">查看历史家族头像</a>
+			<a href="javascript:;" class="btn">取消</a>
+		</div>
+
+		<div class="action-group" style="display: block">
+			<div class="list">
+				<span class="icon-share"></span>
+				<p>分享群聊</p>
+			</div>
+			<div class="list">
+				<span class="icon-invite"></span>
+				<p>邀请成员入群</p>
+			</div>
+			<div class="list">
+				<span class="icon-cancel"></span>
+				<p>取消群关联</p>
+			</div>
+			<div class="list">
+				<span class="icon-close"></span>
+				<p>取消</p>
+			</div>
+		</div>
+
+	</div>
+	<div class="mod-dialog" style="display: none;">
+
+		<!-- 温馨提示 v2S-->
+		<div class="dialog-inner cozy-tips-v2" style="display: block">
+			<p class="tit">温馨提示</p>
+			<p class="desc">确定关联QQ群“零零后扩列”到空间家族吗？</p>
+			<div class="btn-box">
+				<a class="btn-cancel" href="javascript:;">取消</a>
+				<a class="btn-sure" href="javascript:;">开启</a>
+			</div>
+		</div>
+		<!-- 温馨提示 v2E-->
+
+		<div class="dialog-inner cozy-tips-v2" style="display: block">
+			<p class="icons"><i class="tips-icon"></i></p>
+			<p class="info-desc">请使用最新版本QQ，获得完整体验。</p>
+			<div class="btn-box">
+				<a class="btn-sure btn-large" href="javascript:;">下载新版QQ</a>
+				<button class="btn-back"><b class="icon"></b></button>
+			</div>
+		</div>
+
+	</div>
+	<div class="mod-pop" id="mod-pop">
+		<div class="tips-box">
+			<i class="tips-icon"></i>
+			<p class="limit-txt">抱歉，你暂时还没有管理任何Q群，无法进行关联操作。</p>
+		</div>
+	</div>
+
+</body>
+
+<script src="../js/zepto.js"></script>
+<script>
+
+	//iphone 需要添加点击事件才触发 active效果
+	document.documentElement.addEventListener('touchend',function(){
+		console.log(1)
+	})
+
+	window.setTimeout(function(){
+		document.querySelector('.tips-success').classList.add('show')
+	},1000)
+
+	document.getElementById('mod-pop').onclick = function(){
+		document.getElementById('mod-pop').style.display = 'none'
+	}
+
+
+</script>
+</html>

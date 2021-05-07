@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>扩列-空间家族</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="../friend-data.css">
+</head>
+
+<body>
+	
+	<section class="friend-data">
+		<div class="fri-hd" id="container">
+			
+		</div>
+		
+		<div class="fri-bd">
+			<div class="fri-info">
+				<div class="fri-option">
+					<p class="fri-txt">
+						<span>想扩的关系：</span>
+						<em>CP</em>
+						<select name="relation" id="">
+							<option value="">CP</option>
+							<option value="">朋友</option>
+							<option value="">男性朋友</option>
+							<option value="">女性朋友</option>
+						</select>
+					</p>
+					<a href="javascript:;" class="btn-choice"></a>
+				</div>
+				<div class="fri-option">
+					<p class="fri-txt">
+						<span>想扩的关系：</span>
+						<em>CP</em>
+						<select name="relation" id="">
+							<option value="">CP</option>
+							<option value="">朋友</option>
+							<option value="">男性朋友</option>
+							<option value="">女性朋友</option>
+						</select>
+					</p>
+					<a href="javascript:;" class="btn-choice"></a>
+				</div>
+				<div class="fri-option">
+					<p class="fri-txt">
+						<span>想扩的关系：</span>
+						<em>CP</em>
+						<select name="relation" id="">
+							<option value="">CP</option>
+							<option value="">朋友</option>
+							<option value="">男性朋友</option>
+							<option value="">女性朋友</option>
+						</select>
+					</p>
+					<a href="javascript:;" class="btn-choice"></a>
+				</div>
+				<div class="fri-option">
+					<p class="fri-txt">
+						<span>想扩的对象：</span>
+						<em>妹子</em>
+						<select name="friend" id="">
+							<option value="">学生</option>
+							<option value="">大学生</option>
+							<option value="">程序员</option>
+							<option value="">帅哥</option>
+						</select>
+					</p>
+					<a href="javascript:;" class="btn-choice"></a>
+				</div>
+			</div>
+			<div class="fri-group">
+				<div class="fri-list">
+					<span class="list-name">话唠值</span>
+					<div class="list-data">
+						<p class="data-bar">
+							<span class="data-progress" style="width: 60%;">
+								<em class="data-val">0.6</em>
+							</span>
+						</p>
+						<p class="data-status more">
+							<span class="data-fl">闷罐</span>
+							<span class="data-fr">话唠</span>
+						</p>
+					</div>
+				</div>
+				<div class="fri-list">
+					<span class="list-name">攻受值</span>
+					<div class="list-data">
+						<p class="data-bar">
+							<span class="data-progress" style="width: 40%;">
+								<em class="data-val">0.4</em>
+							</span>
+						</p>
+						<p class="data-status ">
+							<span class="data-fl">受受</span>
+							<span class="data-fr">主攻</span>
+						</p>
+					</div>
+				</div>
+				<div class="fri-list">
+					<span class="list-name">颜值</span>
+					<div class="list-data">
+						<p class="data-bar">
+							<span class="data-progress" style="width: 60%;">
+								<em class="data-val">0.6</em>
+							</span>
+						</p>
+						<p class="data-status more">
+							<span class="data-fl">透明</span>
+							<span class="data-fr">爆表</span>
+						</p>
+					</div>
+				</div>
+				<div class="fri-list">
+					<span class="list-name">树洞值</span>
+					<div class="list-data">
+						<p class="data-bar">
+							<span class="data-progress" style="width: 60%;">
+								<em class="data-val">0.6</em>
+							</span>
+						</p>
+						<p class="data-status more">
+							<span class="data-fl">透明</span>
+							<span class="data-fr">爆表</span>
+						</p>
+					</div>
+				</div>
+				<div class="fri-list">
+					<span class="list-name">燃值</span>
+					<div class="list-data">
+						<p class="data-bar">
+							<span class="data-progress" style="width: 60%;">
+								<em class="data-val">0.6</em>
+							</span>
+						</p>
+						<p class="data-status more">
+							<span class="data-fl">高冷</span>
+							<span class="data-fr">高热</span>
+						</p>
+					</div>
+				</div>
+				<div class="fri-list">
+					<span class="list-name">秒回值</span>
+					<div class="list-data">
+						<p class="data-bar">
+							<span class="data-progress" style="width: 60%;">
+								<em class="data-val">0.6</em>
+							</span>
+						</p>
+						<p class="data-status more">
+							<span class="data-fl">高冷</span>
+							<span class="data-fr">高热</span>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+<script src="../js/echarts.min.js"></script>
+<script>
+var dom = document.getElementById("container");
+var myChart = echarts.init(dom);
+var app = {};
+option = null;
+option = {
+    tooltip: {},
+    legend: {
+        data: ['自己评价', '他人评价'],
+        textStyle: {
+        	color: '#ffffff'
+        }
+    },
+    radar: {
+        // shape: 'circle',
+        name: {
+            textStyle: {
+                color: '#fff',
+                borderRadius: 3,
+                fontSize: 14,
+                padding: [-2, -6]
+           }
+        },
+        splitLine: {  //分割线
+		    lineStyle: {
+		        // 使用深浅的间隔色
+		        color: ['#FF93C5']
+		    }
+		},
+		axisLine:{
+			lineStyle:{
+				color: ['#FF93C5']
+			}
+		},
+		splitArea: {  //分割区域
+			areaStyle:{
+		        color: ['rgba(255,255,255,0)']
+			}
+		},
+        indicator: [
+           { name: '话唠值', max: 100},
+           { name: '秒回值', max: 100},
+           { name: '燃值', max: 100},
+           { name: '树洞值', max: 100},
+           { name: '颜值', max: 100},
+           { name: '攻受值', max: 100}
+        ],
+        radius: '64%',
+        center: ['50%','52%']
+    },
+    series: [{
+        type: 'radar',
+	    areaStyle: {
+	        color: [
+		        'rgba(255, 255, 255, .5)',
+	        ],
+	        shadowColor: 'rgba(0, 0, 0, .2)',
+	        shadowBlur: 10
+	    },
+        data : [
+            {
+                value : [20, 50, 50, 30, 40, 60],
+                name : '自己评价',
+                symbolSize : 10,
+                // symbol: 'circle',  //'circle', 'rect', 'roundRect', 'triangle', 'diamond', 'pin', 'arrow', 
+				lineStyle: {
+					color: '#ffffff',
+					width: 1
+				},
+				itemStyle:{
+					color: '#f0e463'
+				}
+            },
+             {
+                value : [43, 56, 20, 77, 60, 19],
+                name : '他人评价',
+                symbolSize : 10,
+				lineStyle: {
+					type: 'dotted',
+					color: '#ffffff',
+					width: 1
+				},
+				itemStyle:{
+					color: '#c43ad4'
+				}
+            }
+        ]
+    }]
+};
+
+setTimeout(function(){
+	let num = 20;
+	let max = 100;
+	let val = option.series[0].data[0].value[0];
+	let timer = setInterval(function(){
+		num+=1;
+		if(num >= max){
+			num = max;
+			clearInterval( timer );
+		}
+		option.series[0].data[0].value[0] = num;
+		myChart.setOption(option, true);
+		// console.log( option.series[0].data[0].value[0] )
+	},100);
+},1500)
+
+
+if (option && typeof option === "object") {
+    myChart.setOption(option, true);
+}
+</script>
+
+</body>
+</html>
